@@ -1,96 +1,72 @@
-/* Reset default margins and paddings */
-body, h1, h2, form, input {
-  margin: 0;
-  padding: 0;
+/* CSS Reset to normalize styles across different browsers */
+body, h1, form, input, label {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Set background color and font styles */
 body {
-  background-color: #f8f8f8;
-  font-family: Arial, sans-serif;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Center the content on the page */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 20px;
 }
 
 h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-h2 {
-  margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 form {
-  margin-bottom: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Style input fields and buttons */
-form input[type="text"],
-form input[type="number"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.form-section {
+    margin-bottom: 20px;
 }
 
-form input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 4px;
+label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
 }
 
-form input[type="submit"]:hover {
-  background-color: #45a049;
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
 }
 
-/* Style the statistics div */
-#statistics {
-  background-color: #f2f2f2;
-  padding: 10px;
-  border-radius: 4px;
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #3498db;
 }
 
-/* Style the table */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-th, td {
-  padding: 8px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+input[type="submit"]:hover {
+    background-color: #27ae60;
 }
 
-th {
-  background-color: #f2f2f2;
-}
-
-/* Style pass and fail rows differently */
-tr.pass {
-  background-color: #d3ffd3;
-}
-
-tr.fail {
-  background-color: #ffd3d3;
-}
-
-/* Add some spacing and alignment */
-.center {
-  text-align: center;
-  margin-bottom: 10px;
+/* Optional: Add some spacing between form sections */
+.form-section:not(:last-child) {
+    margin-bottom: 25px;
 }
 
